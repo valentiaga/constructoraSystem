@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facturas",
+  "info": {
+    "singularName": "factura",
+    "pluralName": "facturas",
+    "displayName": "Facturas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Importe": {
+      "type": "decimal"
+    }
+  }
+}

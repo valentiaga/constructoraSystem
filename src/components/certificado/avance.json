@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_certificado_avances",
+  "info": {
+    "displayName": "Avance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Porcentaje": {
+      "type": "decimal"
+    },
+    "Pesos": {
+      "type": "decimal"
+    },
+    "Item": {
+      "type": "string"
+    }
+  }
+}

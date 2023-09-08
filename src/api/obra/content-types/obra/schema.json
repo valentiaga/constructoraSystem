@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obras",
+  "info": {
+    "singularName": "obra",
+    "pluralName": "obras",
+    "displayName": "Obras",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Domicilio": {
+      "type": "string"
+    },
+    "Localidad": {
+      "type": "string"
+    },
+    "FechaInicio": {
+      "type": "date"
+    },
+    "FechaFin": {
+      "type": "date"
+    },
+    "FechaFinEstimada": {
+      "type": "date"
+    },
+    "TipoDeObra": {
+      "type": "enumeration",
+      "enum": [
+        "vivienda unifamiliar",
+        "vivienda multifamiliar",
+        "institucional"
+      ]
+    },
+    "empresa": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::empresa.empresa",
+      "inversedBy": "obra"
+    },
+    "presupuesto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::presupuesto.presupuesto"
+    },
+    "certificados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::certificado.certificado"
+    },
+    "facturas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::factura.factura"
+    },
+    "empleados": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::empleado.empleado",
+      "mappedBy": "obras"
+    },
+    "proveedores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::proveedor.proveedor"
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente",
+      "inversedBy": "obra"
+    }
+  }
+}

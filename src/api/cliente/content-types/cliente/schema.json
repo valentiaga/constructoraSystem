@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clientes",
+  "info": {
+    "singularName": "cliente",
+    "pluralName": "clientes",
+    "displayName": "Cliente"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RazonSocial": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "biginteger"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "obra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::obra.obra",
+      "mappedBy": "cliente"
+    },
+    "presupuesto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::presupuesto.presupuesto",
+      "mappedBy": "cliente"
+    }
+  }
+}

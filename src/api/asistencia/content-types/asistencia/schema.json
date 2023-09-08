@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asistencias",
+  "info": {
+    "singularName": "asistencia",
+    "pluralName": "asistencias",
+    "displayName": "Asistencia",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "empleados": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::empleado.empleado",
+      "mappedBy": "asistencias"
+    },
+    "Asistencia": {
+      "displayName": "Asistencia",
+      "type": "component",
+      "repeatable": true,
+      "component": "empleados.asistencia"
+    },
+    "InicioSemana": {
+      "type": "date"
+    }
+  }
+}

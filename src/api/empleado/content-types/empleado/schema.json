@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empleados",
+  "info": {
+    "singularName": "empleado",
+    "pluralName": "empleados",
+    "displayName": "Empleados",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Apellido": {
+      "type": "string"
+    },
+    "Nombre": {
+      "type": "string"
+    },
+    "Legajo": {
+      "type": "integer",
+      "required": false,
+      "unique": true
+    },
+    "FechaIngreso": {
+      "type": "date"
+    },
+    "Cuil": {
+      "type": "biginteger"
+    },
+    "BancoDeposito": {
+      "type": "enumeration",
+      "enum": [
+        "Santander",
+        "Creedicoop",
+        "Frances"
+      ]
+    },
+    "DNI": {
+      "type": "biginteger"
+    },
+    "Direccional": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "biginteger"
+    },
+    "sueldos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sueldo.sueldo",
+      "inversedBy": "empleados"
+    },
+    "obras": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::obra.obra",
+      "inversedBy": "empleados"
+    },
+    "cargos": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "asistencias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::asistencia.asistencia",
+      "inversedBy": "empleados"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presupuestos",
+  "info": {
+    "singularName": "presupuesto",
+    "pluralName": "presupuestos",
+    "displayName": "Presupuestos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ImporteInicial": {
+      "type": "decimal"
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Designaciones": {
+      "type": "enumeration",
+      "enum": [
+        "tareas preliminares",
+        "estructura de hormigón",
+        "excavación ",
+        "contrapisos",
+        "electricidad",
+        "pisos",
+        "instalaciones",
+        "yeseria",
+        "revestimiento",
+        "cubiertas"
+      ]
+    },
+    "TipoContrato": {
+      "type": "enumeration",
+      "enum": [
+        "tipo1",
+        "tipo2"
+      ]
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente",
+      "inversedBy": "presupuesto"
+    },
+    "proveedore": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::proveedor.proveedor"
+    }
+  }
+}

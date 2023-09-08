@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sueldos",
+  "info": {
+    "singularName": "sueldo",
+    "pluralName": "sueldos",
+    "displayName": "Sueldo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Importe": {
+      "type": "decimal"
+    },
+    "FechaCobro": {
+      "type": "date"
+    },
+    "obra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::obra.obra"
+    },
+    "Tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Adelanto",
+        "Extra",
+        "Deduccion",
+        "Quincena"
+      ]
+    },
+    "empleados": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::empleado.empleado",
+      "mappedBy": "sueldos"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_empleados_asistencias",
+  "info": {
+    "displayName": "Asistencia",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Dia": {
+      "type": "date"
+    },
+    "CantidadHoras": {
+      "type": "integer"
+    }
+  }
+}

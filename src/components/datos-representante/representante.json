@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_datos_representante_representantes",
+  "info": {
+    "displayName": "Representante",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "Telefono": {
+      "type": "biginteger"
+    }
+  }
+}

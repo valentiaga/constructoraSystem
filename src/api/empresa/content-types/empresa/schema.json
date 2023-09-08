@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empresas",
+  "info": {
+    "singularName": "empresa",
+    "pluralName": "empresas",
+    "displayName": "Empresa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RazonSocial": {
+      "type": "string"
+    },
+    "NombreFantasia": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Localidad": {
+      "type": "string"
+    },
+    "CUIT": {
+      "type": "biginteger"
+    },
+    "empleados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::empleado.empleado"
+    },
+    "proveedores": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::proveedor.proveedor"
+    },
+    "obras": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::obra.obra"
+    },
+    "clientes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cliente.cliente"
+    },
+    "obra": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::obra.obra",
+      "mappedBy": "empresa"
+    }
+  }
+}

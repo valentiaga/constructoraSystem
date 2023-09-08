@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cargos",
+  "info": {
+    "singularName": "cargo",
+    "pluralName": "cargos",
+    "displayName": "Cargos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "PrecioHora": {
+      "type": "decimal"
+    }
+  }
+}
