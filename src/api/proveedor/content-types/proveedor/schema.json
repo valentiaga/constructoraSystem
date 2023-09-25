@@ -18,8 +18,9 @@
     "Tipo": {
       "type": "enumeration",
       "enum": [
-        "banios",
-        "corralón"
+        "Electricidad",
+        "Baños",
+        "Corralón"
       ]
     },
     "Domicilio": {

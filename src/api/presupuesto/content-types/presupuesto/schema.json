@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "ImporteInicial": {
-      "type": "decimal"
+      "type": "biginteger"
     },
     "Fecha": {
       "type": "date"

@@ -13,10 +13,10 @@
   "pluginOptions": {},
   "attributes": {
     "Importe": {
-      "type": "decimal"
+      "type": "biginteger"
     },
     "RetencionFondoGarantia": {
-      "type": "decimal"
+      "type": "biginteger"
     },
     "NroCertificado": {
       "type": "integer"
@@ -29,6 +29,26 @@
       "type": "component",
       "repeatable": true,
       "component": "certificado.avance"
+    },
+    "proveedore": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::proveedor.proveedor"
+    },
+    "Aumentos": {
+      "displayName": "Incrementos",
+      "type": "component",
+      "repeatable": true,
+      "component": "incremento.incrementos"
+    },
+    "Adicionales": {
+      "displayName": "Adicionales",
+      "type": "component",
+      "repeatable": true,
+      "component": "adicional.adicionales"
+    },
+    "Titulo": {
+      "type": "string"
     }
   }
 }

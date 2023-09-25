@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "Importe": {
-      "type": "decimal"
+      "type": "biginteger"
     },
     "FechaCobro": {
       "type": "date"

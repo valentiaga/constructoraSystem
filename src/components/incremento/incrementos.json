@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_incremento_incrementos",
+  "info": {
+    "displayName": "Incrementos",
+    "icon": "chartPie",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "OtorgadoPor": {
+      "type": "enumeration",
+      "enum": [
+        "UOCRA",
+        "Otro"
+      ]
+    },
+    "Periodo": {
+      "type": "string"
+    },
+    "Porcentaje": {
+      "type": "decimal"
+    },
+    "Importe": {
+      "type": "biginteger"
+    }
+  }
+}

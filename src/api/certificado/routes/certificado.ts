@@ -1,7 +1,9 @@
-/**
- * certificado router
- */
-
-import { factories } from '@strapi/strapi';
-
-export default factories.createCoreRouter('api::certificado.certificado');
+export default {
+    routes: [
+      {
+        method: 'GET',
+        path: '/certificado/:id',
+        handler: 'certificado.calculateTotals',
+      }
+    ]
+  }

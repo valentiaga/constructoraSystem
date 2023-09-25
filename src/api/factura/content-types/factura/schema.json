@@ -4,7 +4,8 @@
   "info": {
     "singularName": "factura",
     "pluralName": "facturas",
-    "displayName": "Facturas"
+    "displayName": "Facturas",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "Importe": {
-      "type": "decimal"
+      "type": "biginteger"
     }
   }
 }

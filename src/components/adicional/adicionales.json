@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_adicional_adicionales",
+  "info": {
+    "displayName": "Adicionales",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "Item": {
+      "type": "string"
+    },
+    "Cantidad": {
+      "type": "string"
+    },
+    "Importe": {
+      "type": "biginteger"
+    }
+  }
+}

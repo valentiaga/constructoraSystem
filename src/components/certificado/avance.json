@@ -10,7 +10,7 @@
       "type": "decimal"
     },
     "Pesos": {
-      "type": "decimal"
+      "type": "biginteger"
     },
     "Item": {
       "type": "string"
